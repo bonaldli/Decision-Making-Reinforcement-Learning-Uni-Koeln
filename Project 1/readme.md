@@ -12,4 +12,4 @@ First of all, we have three datasets, and the summaries are given as below:
 ## Task
 You will use python to learn the structure for the datasets of _Titanic_ and _Wine_, associated with the Bayesian Score.
 - **Input:**
--- `xxx.csv`
+  - `xxx.csv`
