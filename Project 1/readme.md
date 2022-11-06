@@ -14,7 +14,7 @@ First of all, we have three datasets, and the summaries are given as below:
 
 ## Task
 You will use python to learn the structure for the datasets of _Titanic_ and _Wine_, associated with the Bayesian Score. The input and output are required as follows. You could take a look at the example.
-- **Input:**: `example.csv`
+- **Input:** `example.csv` (using the simplified data is recommended)
 - **Output:** `example.gph`, `example.pdf`, `example.score`
 - A specific example of a graph for Titanic dataset with only 3 edges (numsiblings ➝ numparentschildren, numsiblings ➝ passengerclass, numparentschildren ➝ sex) will look like `titanicexample.gph`.
 
