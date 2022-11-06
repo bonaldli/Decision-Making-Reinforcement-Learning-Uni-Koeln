@@ -25,7 +25,7 @@ You will use python to learn the structure for the datasets of _Titanic_ and _Wi
 ## Grading:
 - Titanic Graph (`titanic.gph`): 20%
 - Wine Graph (`wine.gph`): 30%
-- Report:50%
+- Report: 50%
   - Overleaf [Template](https://www.overleaf.com/read/fqpyqzzjvfzy)
   - Description of algorithm: 10%
   - Visualization of output graphs: 10%
