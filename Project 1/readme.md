@@ -47,4 +47,4 @@ Please use the give Overleaf [Template](https://www.overleaf.com/read/fqpyqzzjvf
 ## Submission
 Send me your `.zip` file to my email before the deadline. The file should includes following:
 - `.gph` files (x2 or x3): `titanic.gph`, `wine.gph`, (`california.gph`)
-- `re.pdf` file (x1): `Project 1 Report-First Name-Last Name.pdf`
+- `.pdf` file (x1): `Project 1 Report-First Name-Last Name.pdf`
