@@ -1,5 +1,7 @@
 # Welcome to Project 1: Bayesian Structure Learning 
+
 After finishing this project, you will be able to get thorough understanding about Bayesian Network and Structure Learning.
+
 ![alt text](https://github.com/bonaldli/DMU-Uni-Koeln/blob/main/Project%201/intro.png?raw=true)
 
 ## Datasets
