@@ -26,7 +26,6 @@ You will use python to learn the structure for the datasets of _Titanic_ and _Wi
 - Titanic Graph (`titanic.gph`): 20%
 - Wine Graph (`wine.gph`): 30%
 - Report: 50%
-  - Overleaf [Template](https://www.overleaf.com/read/fqpyqzzjvfzy)
   - Description of algorithm: 10%
   - Visualization of output graphs: 10%
   - Code (in PDF): 10%
@@ -38,3 +37,11 @@ You will use python to learn the structure for the datasets of _Titanic_ and _Wi
     - Description of algorithm: 10%
     - Visualization of output graphs: 10%
     - Code (in PDF): 10%
+
+## Template
+Please use the give Overleaf [Template](https://www.overleaf.com/read/fqpyqzzjvfzy) for writing for project report.
+
+## Submission
+Send me your `.zip` file to my email before the deadline. The file should includes following:
+- `.gph` files (x2 or x3): `titanic.gph`, `wine.gph`, (`california.gph`)
+- `re.pdf` file (x1): `Project 1 Report-First Name-Last Name.pdf`
