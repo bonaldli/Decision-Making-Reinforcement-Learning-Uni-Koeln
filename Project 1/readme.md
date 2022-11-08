@@ -26,6 +26,9 @@ You will use python to learn the structure for the datasets of _Titanic_ and _Wi
   - `bnlearn`
 - Discussions are encouraged.
 
+## Example:
+You could find the examples in the `Example` folder. And most importantly, you could follow the tutorial [here](https://github.com/bonaldli/DMU-Uni-Koeln/blob/main/Project%201/Example/A%20Step-by-Step%20Guide%20in%20detecting%20causal%20relationships%20using%20Bayesian%20Structure%20Learning%20in%20Python.pdf).
+
 ## Grading:
 - Titanic Graph (`titanic.gph`): 20%
 - Wine Graph (`wine.gph`): 30%
