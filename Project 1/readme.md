@@ -20,9 +20,10 @@ You will use python to learn the structure for the datasets of _Titanic_ and _Wi
 
 ## Hint:
 - Python is recommended. However, you could use any programming language that you prefer. 
-- You are not recommended to use packages uploaded in the internet that is directly related to Bayesian structure learning.
+- If you use packages that is directly related to Bayesian structure learning, then you are recommended to write down the functions from the packages on your own way. 
 - The Python package for optimization are recommended for your to use:
   - `NetworkX`
+  - `bnlearn`
 - Discussions are encouraged.
 
 ## Grading:
@@ -42,9 +43,9 @@ You will use python to learn the structure for the datasets of _Titanic_ and _Wi
     - Code (in PDF): 10%
 
 ## Template
-Please use the give Overleaf [Template](https://www.overleaf.com/read/fqpyqzzjvfzy) for writing for project report.
+Please use the given Overleaf [Template](https://www.overleaf.com/read/fqpyqzzjvfzy) for writing for project report.
 
 ## Submission
-Send me your `.zip` file to my email before the deadline. The file should includes following:
+Send me your `.zip` file to my email before the deadline: **23:59 PM, 20 Nov 2022** (updated). The file should includes following:
 - `.gph` files (x2 or x3): `titanic.gph`, `wine.gph`, (`california.gph`)
 - `.pdf` file (x1): `Project 1 Report-First Name-Last Name.pdf`
