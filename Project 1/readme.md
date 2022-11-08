@@ -49,6 +49,6 @@ You could find the examples in the `Example` folder. And most importantly, you c
 Please use the given Overleaf [Template](https://www.overleaf.com/read/fqpyqzzjvfzy) for writing for project report.
 
 ## Submission
-Send me your `.zip` file to my email before the deadline: **23:59 PM, 20 Nov 2022** (updated). The file should includes following:
+Submit your `.zip` file to the ILIAS system before the deadline: **23:59 PM, 20 Nov 2022** (updated). The file should includes following:
 - `.gph` files (x2 or x3): `titanic.gph`, `wine.gph`, (`california.gph`)
 - `.pdf` file (x1): `Project 1 Report-First Name-Last Name.pdf`
