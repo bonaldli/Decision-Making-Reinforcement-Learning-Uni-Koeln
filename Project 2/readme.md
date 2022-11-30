@@ -1,54 +1,53 @@
-# Welcome to Project 1: Bayesian Structure Learning 
+# Welcome to Project 2: Reinforcement Learning 
 
-After finishing this project, you will be able to get thorough understanding about Bayesian Network and Structure Learning.
+(This project is particially constructed based on online resources).
 
-![alt text](https://github.com/bonaldli/DMU-Uni-Koeln/blob/main/Project%201/intro.png?raw=true)
+In this project, you will learn how to learn a policy for your agent based on the historical trials that the agent has already made. Two popular senarios are involved. One is Grid World, and another is Mountain Car.  This project will also be a competition among you: let's see who will find the best policy for two different Markov decision processes given sampled transitions, with each consisting of a state _s_, action _a_, reward _r_, and next state _sp_. The best policy is the one that maximizes the total expected reward.
+
+Two CSV-formatted datasets are provided. Note that this is an instance of batch reinforcement learning where the data from exploring has been collected and given to you, and you have to work with it. There will not be an opportunity to explore in runtime in a simulator, because your output will be a (deterministic) policy which we will run on our simulator. Keep this in mind, particularly if you are using a model-free approach.
+
+![Gird World Sample](https://github.com/bonaldli/DMU-Uni-Koeln/blob/main/Project%202/Figs/grid-world.png?raw=true)
+![Mountain Car Sample](https://github.com/bonaldli/DMU-Uni-Koeln/blob/main/Project%202/Figs/mountain-car.gif?raw=true)
 
 ## Datasets
 First of all, we have three datasets, and the summaries are given as below:
-| Dataset  | Number of Variables | Source | Further Reading | Content |
-| ------------- | ------------------- | ------------- | -------------------------------------- | ------------- |
-| Titanic Data | 8 | [Kaggle](https://www.kaggle.com/c/titanic) | (1) [probability](https://web.stanford.edu/class/archive/cs/cs109/cs109.1166/problem12.html) | (1) original data; (2) simplified data (recommended)|
-| Wine Prediction Data | 12 | [Kaggle](https://www.kaggle.com/datasets/dropout/winequalityred) |  (1) [descriptive analysis](https://rpubs.com/Hpolhe/950288) (in R); (2) [sales prediction case](https://rstudio-pubs-static.s3.amazonaws.com/840867_cdbf78a38ded4b10be5af93271ee7593.html#DATA_EXPLORATION)| (1) original data; (2) simplified data (recommended) |
-| California House Price (Bonus) | 10 | [Kaggle](https://www.kaggle.com/datasets/camnugent/california-housing-prices) | (1) [descriptive analysis](https://inria.github.io/scikit-learn-mooc/python_scripts/datasets_california_housing.html) | try original data |
+| Dataset  | Description |
+| ------------- | ----------------- |
+| Grid World Data | 10 x 10 grid world (100 states) with 4 actions. Use `LinearIndices((10,10))[x,y]` to find the integer state from the x and y coordinates. Actions are 1: left, 2: right, 3: up, 4: down. The discount factor is 0.95.|
+| Mountain Car Data | MountainCarContinuous-v0 environment from [Open AI Gym](https://www.gymlibrary.dev/) with altered parameters. State measurements are given by integers with 500 possible position values and 100 possible velocity values (50,000 possible state measurements). `1+pos+500*vel` gives the integer corresponding to a state with position pos and velocity vel. There are 7 actions that represent different amounts of acceleration. This problem is undiscounted, and ends when the goal (the flag) is reached. Note that since the discrete state measurements are calculated after the simulation, the data in medium.csv does not quite satisfy the Markov property. |
 
-## Task
-You will use python to learn the structure for the datasets of _Titanic_ and _Wine_, associated with the Bayesian Score. The input and output are required as follows. You could take a look at the example.
-- **Input:** `example.csv` (using the simplified data is recommended)
-- **Output:** `example.gph`, `example.pdf`, `example.score`
-- A specific example of a graph for Titanic dataset with only 3 edges (numsiblings ➝ numparentschildren, numsiblings ➝ passengerclass, numparentschildren ➝ sex) will look like `titanicexample.gph`.
+Hints: Each line in the CSV file represents a transition from a state _s_ to a next state _sp_—along with the associated reward _r_ —when taking an action _a_. You might not have data for every state, nor are all states equally important. Use your best judgment when handling this.
 
-## Hint:
+## Resources:
+- 1. Grid World:
+  - [R1.1: Reinforcement Learning — Implement Grid World](https://towardsdatascience.com/reinforcement-learning-implement-grid-world-from-scratch-c5963765ebff)
+  - [C1: Code](https://github.com/MJeremy2017/reinforcement-learning-implementation/blob/master/GridWorld/gridWorld.py)
+- 2. Mountain Car:
+  - [R2.1: Reinforcement Learning Applied to the Mountain Car Problem](https://towardsdatascience.com/reinforcement-learning-applied-to-the-mountain-car-problem-1c4fb16729ba)
+  - [C2.1: MountainCarContinuous-v0 ](https://github.com/openai/gym/blob/master/gym/envs/classic_control/continuous_mountain_car.py): You may look at the code for the MountainCarContinuous-v0 environment, but note that we will not use exactly the same parameters.
+  - [C2.2: Mountain Car Implementation](https://github.com/MJeremy2017/reinforcement-learning-implementation/tree/master/MountainCar)
+  
+There are a lot of resources online. You are encouraged to search and reuse it. But please take care that all the resources provided above are online reinforcement learning, which means no historical data are provided and the agent is trained and improving its policy online in a simulator. But our project is to do a batch reinforcement learning, where you learn an optimal policy based on historical data. Please pay attention to this difference.
+
+## Task:
 - Python is recommended. However, you could use any programming language that you prefer. 
-- If you use packages that is directly related to Bayesian structure learning, then you are recommended to write down the functions from the packages on your own way. 
-- The Python package for optimization are recommended for your to use:
-  - `NetworkX`
-  - `bnlearn`
+- You cannot use any package/algorithms directly related to reinforcement learning. You can use general optimization packages and libraries for things like function approximation and ODE solving so long as you discuss what you use in your writeup and make it clear how it is used in your code.
 - Discussions are encouraged.
-
-## Example:
-You could find the examples in the `Example` folder. And most importantly, you could follow the tutorial [here](https://github.com/bonaldli/DMU-Uni-Koeln/blob/main/Project%201/Example/A%20Step-by-Step%20Guide%20in%20detecting%20causal%20relationships%20using%20Bayesian%20Structure%20Learning%20in%20Python.pdf).
+- Submit a `report.pdf` file with a description of your algorithm(s) and their performance characteristics. Include the running/training time for each policy. Also, typeset your code and include it in the PDF.
 
 ## Grading:
-- Titanic Graph (`titanic.gph`): 20%
-- Wine Graph (`wine.gph`): 30%
-- Report: 50%
-  - Description of algorithm: 10%
-  - Visualization of output graphs: 10%
-  - Code (in PDF): 10%
-  - Interpretation and analysis of the results: 10%
+- Grid World Policy (`grid_world.policy`): 20%
+- Mmountain Car Policy (`mountain_car.policy`): 20%
+- Report: 60%
+  - Description of policy: 15%
+  - Performance characteristics, i.e. running/training time: 15%
+  - Code (in PDF): 20%
   - Reference: 10%
-- Bonus:
-  - California Graph (`california.gph`): + 20%
-  - Report: + 30%
-    - Description of algorithm: 10%
-    - Visualization of output graphs: 10%
-    - Code (in PDF): 10%
 
 ## Template
 Please use the given Overleaf [Template](https://www.overleaf.com/read/fqpyqzzjvfzy) for writing for project report.
 
 ## Submission
 Submit your `.zip` file to the ILIAS system before the deadline: **23:59 PM, 20 Nov 2022** (updated). The file should includes following:
-- `.gph` files (x2 or x3): `titanic.gph`, `wine.gph`, (`california.gph`)
-- `.pdf` file (x1): `Project 1 Report-First Name-Last Name.pdf`
+- `.policy` files (x2): `grid_world.policy`, `mountain_car.policy`
+- `.pdf` file (x1): `Project 2 Report-First Name-Last Name.pdf`
