@@ -48,6 +48,6 @@ There are a lot of resources online. You are encouraged to search and reuse it. 
 Please use the given Overleaf [Template](https://www.overleaf.com/read/fqpyqzzjvfzy) for writing for project report.
 
 ## Submission
-Submit your `.zip` file to the ILIAS system before the deadline: **23:59 PM, 16 Dec 2022 (Fri)**. The file should includes following:
+Submit your `.zip` file to the ILIAS system before the deadline: **23:59 PM, 18 Dec 2022 (Sun)**. The file should includes following:
 - `.policy` files (x2): `grid_world.policy`, `mountain_car.policy`
 - `.pdf` file (x1): `Project 2 Report-First Name-Last Name.pdf`
