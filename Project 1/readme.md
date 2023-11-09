@@ -1,6 +1,6 @@
 # Welcome to Project 1: Bayesian Structure Learning 
 
-After finishing this project, you will be able to get thorough understanding about Bayesian Network and Structure Learning.
+After finishing this project, you will be able to get a thorough understanding of Bayesian Network and Structure Learning.
 
 ![alt text](https://github.com/bonaldli/DMU-Uni-Koeln/blob/main/Project%201/intro.png?raw=true)
 
@@ -13,21 +13,23 @@ First of all, we have three datasets, and the summaries are given as below:
 | California House Price (Bonus) | 10 | [Kaggle](https://www.kaggle.com/datasets/camnugent/california-housing-prices) | (1) [descriptive analysis](https://inria.github.io/scikit-learn-mooc/python_scripts/datasets_california_housing.html) | try original data |
 
 ## Task
-You will use python to learn the structure for the datasets of _Titanic_ and _Wine_, associated with the Bayesian Score. The input and output are required as follows. You could take a look at the example.
+You will use Python to learn the structure for the datasets of _Titanic_ and _Wine_, associated with the Bayesian Score. The input and output are required as follows. You could take a look at the example.
 - **Input:** `example.csv` (using the simplified data is recommended)
 - **Output:** `example.gph`, `example.pdf`, `example.score`
 - A specific example of a graph for Titanic dataset with only 3 edges (numsiblings ➝ numparentschildren, numsiblings ➝ passengerclass, numparentschildren ➝ sex) will look like `titanicexample.gph`.
 
 ## Hint:
 - Python is recommended. However, you could use any programming language that you prefer. 
-- If you use packages that is directly related to Bayesian structure learning, then you are recommended to write down the functions from the packages on your own way. 
-- The Python package for optimization are recommended for your to use:
+- Please try your best not to directly use structure learning package in Python, instead, try to write down your own code based on whatever algorithm you wanna use (K2, Local Search, Genetic, NoTears).
+- If you really wanna use packages that are directly related to Bayesian structure learning, then you are recommended to write down the functions from the packages in your own way. And your code should be runnable as-is: direct input and can get the output.
+- In the Bonus, if you don't like the California Dataset, you could find your own dataset. And in your report, briefly introduce your own dataset.
+- Two Python packages for optimization are related:
   - `NetworkX`
   - `bnlearn`
 - Discussions are encouraged.
 
 ## Example:
-You could find the examples in the `Example` folder. And most importantly, you could follow the tutorial [here](https://github.com/bonaldli/DMU-Uni-Koeln/blob/main/Project%201/Example/A%20Step-by-Step%20Guide%20in%20detecting%20causal%20relationships%20using%20Bayesian%20Structure%20Learning%20in%20Python.pdf).
+You can find the examples in the `Example` folder. And most importantly, you could follow the tutorial [here](https://github.com/bonaldli/DMU-Uni-Koeln/blob/main/Project%201/Example/A%20Step-by-Step%20Guide%20in%20detecting%20causal%20relationships%20using%20Bayesian%20Structure%20Learning%20in%20Python.pdf).
 
 ## Grading:
 - Titanic Graph (`titanic.gph`): 20%
@@ -49,6 +51,6 @@ You could find the examples in the `Example` folder. And most importantly, you c
 Please use the given Overleaf [Template](https://www.overleaf.com/read/fqpyqzzjvfzy) for writing for project report.
 
 ## Submission
-Submit your `.zip` file to the ILIAS system before the deadline: **23:59 PM, 20 Nov 2022** (updated). The file should includes following:
+Submit your `.zip` file to the ILIAS system before the deadline: **23:59 PM, 26 Nov 2023** (updated). The file should includes following:
 - `.gph` files (x2 or x3): `titanic.gph`, `wine.gph`, (`california.gph`)
 - `.pdf` file (x1): `Project 1 Report-First Name-Last Name.pdf`
