@@ -6,7 +6,7 @@ In this project, you will learn how to learn a policy for your agent based on th
 
 Two CSV-formatted datasets are provided. Note that this is an instance of batch reinforcement learning (or offline reinforcement learning) where the data from exploring has been collected and given to you, and you have to work with it. There will not be an opportunity to explore in runtime in a simulator because your output will be a (deterministic) policy that we will run on our simulator. Keep this in mind, particularly if you are using a model-free approach.
 
-![Gird World Sample](https://github.com/bonaldli/DMU-Uni-Koeln/blob/main/Project%202/Figs/grid-world.png?raw=true)
+![Gird World Sample](https://github.com/bonaldli/DMU-Uni-Koeln/blob/main/Project%202/Figs/grid-world.png?raw=true) (only for demonstration)
 ![Mountain Car Sample](https://github.com/bonaldli/DMU-Uni-Koeln/blob/main/Project%202/Figs/mountain-car.gif?raw=true)
 
 ## Datasets
