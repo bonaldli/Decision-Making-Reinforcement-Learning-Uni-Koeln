@@ -46,7 +46,7 @@ There are a lot of resources online. You are encouraged to search and reuse it. 
   - No more than 6 pages
 
 ## Template
-Please use the given Overleaf [Template](https://www.overleaf.com/read/fqpyqzzjvfzy) to write the project report.
+Please use the given Overleaf [Template](https://www.overleaf.com/read/nsqmvbpswxpk#2628df) to write the project report.
 
 ## Submission
 Submit your `.zip` file to the ILIAS system before the deadline: **23:59 PM, 14 Jan 2024 (Sun)**. The file should include the following:
