@@ -4,13 +4,13 @@
 
 In this project, you will learn how to learn a policy for your agent based on the historical trials that the agent has already made. Two popular senarios are involved. One is Grid World, and another is Mountain Car.  This project will also be a competition among you: let's see who will find the best policy for two different Markov decision processes given sampled transitions, with each consisting of a state _s_, action _a_, reward _r_, and next state _sp_. The best policy is the one that maximizes the total expected reward.
 
-Two CSV-formatted datasets are provided. Note that this is an instance of batch reinforcement learning where the data from exploring has been collected and given to you, and you have to work with it. There will not be an opportunity to explore in runtime in a simulator, because your output will be a (deterministic) policy which we will run on our simulator. Keep this in mind, particularly if you are using a model-free approach.
+Two CSV-formatted datasets are provided. Note that this is an instance of batch reinforcement learning (or offline reinforcement learning) where the data from exploring has been collected and given to you, and you have to work with it. There will not be an opportunity to explore in runtime in a simulator because your output will be a (deterministic) policy that we will run on our simulator. Keep this in mind, particularly if you are using a model-free approach.
 
 ![Gird World Sample](https://github.com/bonaldli/DMU-Uni-Koeln/blob/main/Project%202/Figs/grid-world.png?raw=true)
 ![Mountain Car Sample](https://github.com/bonaldli/DMU-Uni-Koeln/blob/main/Project%202/Figs/mountain-car.gif?raw=true)
 
 ## Datasets
-First of all, we have three datasets, and the summaries are given as below:
+First of all, we have three datasets, and the summaries are given below:
 | Dataset  | Description |
 | ------------- | ----------------- |
 | Grid World Data | 10 x 10 grid world (100 states) with 4 actions. Use `LinearIndices((10,10))[x,y]` to find the integer state from the x and y coordinates. Actions are 1: left, 2: right, 3: up, 4: down. The discount factor is 0.95.|
@@ -43,12 +43,13 @@ There are a lot of resources online. You are encouraged to search and reuse it. 
   - Performance characteristics, i.e. running/training time: 15%
   - Code (in PDF): 20%
   - Reference: 10%
+  - No more than 6 pages
 
 ## Template
-Please use the given Overleaf [Template](https://www.overleaf.com/read/fqpyqzzjvfzy) for writing for project report.
+Please use the given Overleaf [Template](https://www.overleaf.com/read/fqpyqzzjvfzy) to write the project report.
 
 ## Submission
-Submit your `.zip` file to the ILIAS system before the deadline: **23:59 PM, 18 Dec 2022 (Sun)**. The file should includes following:
+Submit your `.zip` file to the ILIAS system before the deadline: **23:59 PM, 14 Jan 2024 (Sun)**. The file should include the following:
 - `.policy` files (x2): `grid_world.policy`, `mountain_car.policy`
 - `.pdf` file (x1): `Project 2 Report-First Name-Last Name.pdf`
 - python file (x1): your source code file
