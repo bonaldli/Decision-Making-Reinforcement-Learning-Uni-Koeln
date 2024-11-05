@@ -22,6 +22,7 @@ You will use Python to learn the structure for the datasets of _Titanic_ and _Wi
 - Python is recommended. However, you could use any programming language that you prefer.
 - There are two tracks of solutions you can use: (1) simple heuristic algorithms from textbook (K2, Local Search, Genetic), or (2) solution from the paper NoTears
   - If you choose Track 1:
+    - In the Example folder: you will see a step-by-step guidance.
     - Please try your best not to directly use the structure learning package in Python (for example: directly use the package of `NetworkX' and `bnlearn', and directly get your graph); instead, try to write down your own code (for example, write down your own `score' function, your own `searching' function) based on whatever algorithm you wanna use.
     - But, you can of course refer to theses packages, see what's their function, how is it achived in code, then you are recommended to write down the functions from the packages in your own way. And your code should be runnable as-is: direct input and can get the output.
   - If you choose Track 2:
