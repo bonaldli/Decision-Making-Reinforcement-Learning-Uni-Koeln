@@ -1,6 +1,6 @@
 # Welcome to Project 1: Bayesian Structure Learning 
 
-After finishing this project, you will be able to get a thorough understanding of Bayesian Network and Structure Learning.
+After finishing this project, you will have a thorough understanding of Bayesian Network and Structure Learning.
 
 ![alt text](https://github.com/bonaldli/DMU-Uni-Koeln/blob/main/Project%201/intro.png?raw=true)
 
@@ -19,13 +19,15 @@ You will use Python to learn the structure for the datasets of _Titanic_ and _Wi
 - A specific example of a graph for Titanic dataset with only 3 edges (numsiblings ➝ numparentschildren, numsiblings ➝ passengerclass, numparentschildren ➝ sex) will look like `titanicexample.gph`.
 
 ## Hint:
-- Python is recommended. However, you could use any programming language that you prefer. 
-- Please try your best not to directly use structure learning package in Python, instead, try to write down your own code based on whatever algorithm you wanna use (K2, Local Search, Genetic, NoTears).
-- If you really wanna use packages that are directly related to Bayesian structure learning, then you are recommended to write down the functions from the packages in your own way. And your code should be runnable as-is: direct input and can get the output.
+- Python is recommended. However, you could use any programming language that you prefer.
+- There are two tracks of solutions you can use: (1) simple heuristic algorithms from textbook (K2, Local Search, Genetic), or (2) solution from the paper NoTears
+  - If you choose Track 1:
+    - Please try your best not to directly use the structure learning package in Python (for example: directly use the package of `NetworkX' and `bnlearn', and directly get your graph); instead, try to write down your own code (for example, write down your own `score' function, your own `searching' function) based on whatever algorithm you wanna use.
+    - But, you can of course refer to theses packages, see what's their function, how is it achived in code, then you are recommended to write down the functions from the packages in your own way. And your code should be runnable as-is: direct input and can get the output.
+  - If you choose Track 2:
+    - You can directly use the code that is available in github for NoTear, and try to reproduce the result first.
+    - You should also discuss how you determine the L1-penalty tuning parameter, and how it affects your result.
 - In the Bonus, if you don't like the California Dataset, you could find your own dataset. And in your report, briefly introduce your own dataset.
-- Two Python packages for optimization are related:
-  - `NetworkX`
-  - `bnlearn`
 - Discussions are encouraged.
 
 ## Example:
