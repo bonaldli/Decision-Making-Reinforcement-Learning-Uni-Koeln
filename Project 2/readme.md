@@ -49,7 +49,7 @@ There are a lot of resources online. You are encouraged to search and reuse it. 
 Please use the given Overleaf [Template](https://www.overleaf.com/read/nsqmvbpswxpk#2628df) to write the project report.
 
 ## Submission
-Submit your `.zip` file to the ILIAS system before the deadline: **23:59 PM, 14 Jan 2024 (Sun)**. The file should include the following:
+Submit your `.zip` file to the ILIAS system before the deadline. The file should include the following:
 - `.policy` files (x2): `grid_world.policy`, `mountain_car.policy`
 - `.pdf` file (x1): `Project 2 Report-First Name-Last Name.pdf`
 - python file (x1): your source code file
